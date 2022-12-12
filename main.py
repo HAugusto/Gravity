@@ -1,13 +1,7 @@
 import numpy
-import time
+import physics_functions as fisica
 
-g = 9.8
 
-def TimeCalculus(height):
-    return numpy.sqrt((h*2)/g)
-
-def PotentialEnergy(mass, height):
-    return m * g * h
 
 print("Massa (m): ")
 m = int(input())
@@ -15,5 +9,8 @@ m = int(input())
 print("Altura (h): ")
 h = int(input())
 
-tempo = TimeCalculus(h)
-print(tempo)
+Ep = numpy.round(fisica.PotentialEnergyG(m, h),2)
+Em = numpy.round(fisica.MechanicalEnergy(Ep),2)
+print("Energia Potencial: " + str(Ep) + "N")
+print("Energia Cinética: " + str(Ep) + "N")
+print("Energia Mecânica: " + str(Em) + "N")
