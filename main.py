@@ -1,8 +1,6 @@
 import numpy
 import physics_functions as fisica
 
-
-
 print("Massa (m): ")
 m = int(input())
 
